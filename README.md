@@ -20,7 +20,7 @@ This repository provides an easy-to-understand implementation of diffusion model
 
 ## Sampling
 
-The following examples show how to sample images using the models trained in the video on the Landscape Dataset. You can download the checkpoints for the models [here](#).
+The following examples show how to sample images using the models trained in the video on the Landscape Dataset. You can download the checkpoints for the models (https://drive.google.com/drive/folders/1tI2GrUKkvhTqyqkVRkr16p4V0yD_i-WA?usp=drive_link).
 
 ### Unconditional Model
 
