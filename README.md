@@ -1,4 +1,4 @@
-# Pytorch Diffusion Models Implementation
+# Diffusion Models Implementation
 
 ## Overview
 
