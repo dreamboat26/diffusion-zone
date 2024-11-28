@@ -1,0 +1,35 @@
+dataset_params:
+  train_im_sets: ['data/VOC2007']
+  test_im_sets: ['data/VOC2007-test']
+  num_classes : 21
+  im_size : 300
+
+model_params:
+  im_channels : 3
+  aspect_ratios : [
+    [ 1., 2., 0.5 ],
+    [ 1., 2., 3., 0.5, .333 ],
+    [ 1., 2., 3., 0.5, .333 ],
+    [ 1., 2., 3., 0.5, .333 ],
+    [ 1., 2., 0.5 ],
+    [ 1., 2., 0.5 ]
+  ]
+  scales : [0.1, 0.2, 0.375, 0.55, 0.725, 0.9]
+  iou_threshold : 0.5
+  low_score_threshold : 0.01
+  neg_pos_ratio : 3
+  pre_nms_topK : 400
+  detections_per_img : 200
+  nms_threshold : 0.45
+
+train_params:
+  task_name: 'voc'
+  seed: 1111
+  acc_steps: 1
+  num_epochs: 100
+  batch_size: 8
+  lr_steps: [ 40, 50, 60, 70, 80, 90 ]
+  lr: 0.001
+  log_steps : 100
+  infer_conf_threshold : 0.5
+  ckpt_name: 'ssd_voc2007.pth'
